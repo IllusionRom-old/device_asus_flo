@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+TARGET_GCC_VERSION_EXP += 4.8
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_CPU_ABI := armeabi-v7a
@@ -62,6 +62,7 @@ BOARD_EGL_CFG := device/asus/flo/egl.cfg
 #BOARD_USES_HGL := true
 #BOARD_USES_OVERLAY := true
 USE_OPENGL_RENDERER := true
+PRESENT_TIME_OFFSET_FROM_VSYNC_NS := 3200000
 TARGET_USES_ION := true
 TARGET_USES_OVERLAY := true
 TARGET_USES_SF_BYPASS := true
@@ -95,6 +96,11 @@ BOARD_PERSISTIMAGE_PARTITION_SIZE := 5242880
 
 TARGET_USES_POST_PROCESSING := true
 TARGET_CUSTOM_DISPLAY_TUNING := true
+
+USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY := true
+OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
+
+USE_DEVICE_SPECIFIC_CAMERA:= true
 
 HAVE_ADRENO_SOURCE:= false
 
