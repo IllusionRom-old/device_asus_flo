@@ -16,7 +16,7 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT="google/razor/flo:4.4/KRT16O/907817:user/release-keys" PRIVATE_BUILD_DESC="razor-user 4.4 KRT16O 907817 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT=google/razor/flo:4.4/KRT16S/920375:user/release-keys PRIVATE_BUILD_DESC="razor-user 4.4 KRT16S 920375 release-keys"
 
 # bootanimation
 PRODUCT_COPY_FILES += \
